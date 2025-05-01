@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images.png" alt="Your Image" class="top-centered-image">
+      </div>
+    
+    <div class="form">
+        
+        <form action="">
+            <div class="form-header">
+                <h2>Let's Connect</h2>
+                <p>Please fill out the details below.</p>
+            </div>
+            <div class="form-group details">
+                <label for="fullname">Full Name<span>*</span></label><br> 
+                <input type="text" id="fullname" required>
+            </div>
+
+            <div class="form-group details">
+                <label for="number">Contact Number<span>*</span></label><br>
+                <input type="tel" id="number" required>
+            </div>
+
+            <div class="form-group details">
+                <label for="address">Address<span>*</span></label><br>
+                <textarea name="address" id="address" rows="5" cols="30"></textarea>
+            </div>
+
+            <div class="form-group details">
+                <label for="company">Company Name<span>*</span></label><br>
+                <input type="text" id="company" required>
+            </div>
+
+            <div class="form-group details">
+                <label for="mail">Email Address<span>*</span></label><br>
+                <input type="email" id="mail" required>
+            </div>
+
+            <div class="form-group details">
+                <label for="department">Department<span>*</span></label><br>
+                <select name="department" id="department" required>
+                    <option value="">--Select department--</option>
+                    <option value="hr">Human Resources</option>
+                    <option value="sales">Sales</option>
+                    <option value="dev">Development</option>
+                    <option value="market">Marketing</option>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group gender">
+                    <p style="margin: 0%;">Gender<span>*</span></p><br>
+                    <label for="male"> 
+                        <input type="radio" name="gender" id="male">Male</label>
+            
+                        <label for="female"> 
+                            <input type="radio" name="gender" id="female">Female</label>
+            
+                            <label for="no"> 
+                                <input type="radio" name="gender" id="no">Prefer not to say</label>
+            </div>
+            <div class="btn"><input type="submit" value="Submit"></div>
+            
+        </form>
+    </div>
+        
+</body>
+</html>
