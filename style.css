@@ -1,5 +1,5 @@
 body {
-    background-color: blueviolet;
+    background-color: rgb(76, 42, 108);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,11 +15,16 @@ body {
 }
 
 .top-centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
     width: 100%;
-    max-width: 300px; /* Ensure image doesn't get too large */
-    margin-bottom: 30px;
+    height: auto;
 }
 
+span{
+    color: red;
+}
 .form {
     display: flex;
     justify-content: center;
@@ -34,11 +39,12 @@ body {
     border: 5px solid white;
     border-radius: 5px;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0; /* FIX: match form-group */
     background-color: white;
     width: 100%;
     box-shadow: 5px 5px 10px rgb(240, 9, 9);
 }
+
 
 .form-header h2 {
     margin: 0;
@@ -73,12 +79,12 @@ body {
 
 .details textarea:focus,
 .details input:focus {
-    border-bottom-color: blueviolet;
+    border-bottom-color: rgb(76, 42, 108);
 }
 
 .btn input {
     font-weight: bold;
-    color: blueviolet;
+    color: rgb(76, 42, 108);
     background-color: white;
     border: none;
     border-radius: 15%;
